@@ -193,6 +193,8 @@
 
         let geoJson_choropleth = topojson.feature(data[1],data[1].objects.cb_2018_us_county_20m).features;
 
+        console.log(geoJson_cartogram)
+
 
         mapGenerator(geoJson_choropleth,'#svg_choropleth',title='US Election Choropleth',scale=1200)
         mapGenerator(geoJson_cartogram,'#svg_cartogram',title='US Election Cartogram',scale=1300)
